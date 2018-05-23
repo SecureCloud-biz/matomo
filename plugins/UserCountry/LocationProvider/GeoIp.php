@@ -70,7 +70,7 @@ abstract class GeoIp extends LocationProvider
 
     public function isVisible()
     {
-        return !Manager::getInstance()->isPluginActivated('GeoIp2') || self::getCurrentProvider() instanceof GeoIp;
+        return true;
     }
 
     /**
